@@ -31,8 +31,26 @@ const team = [
     },
   ];
 
+const container = document.querySelector('.container')
+
   for(let member of team){
+      const div = document.createElement('div')
+      container.append(div)
+
+      console.log(div)
       for (let key in member){
-          console.log(member[key])
+        const div_2 = document.createElement('div')
+        const img = document.createElement('img')
+        if(key === 'image'){
+            img.setAttribute('src', member[key]);
+            img.append(member[key])
+            div.append(img)
+        }
+        else{
+            div_2.append(member[key])
+            div.append(div_2)
+
+        }
       }
   }
+
