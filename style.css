@@ -15,4 +15,11 @@
 .container>*{
     width: calc(100% / 3 - 10px + 10px/3);
     border: 1px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container img{
+    width: 100%;
+    object-fit: cover;
 }

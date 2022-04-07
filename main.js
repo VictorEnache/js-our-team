@@ -42,7 +42,7 @@ const container = document.querySelector('.container')
         const div_2 = document.createElement('div')
         const img = document.createElement('img')
         if(key === 'image'){
-            img.setAttribute('src', member[key]);
+            img.setAttribute('src', `./img/${member[key]}`);
             img.append(member[key])
             div.append(img)
         }
