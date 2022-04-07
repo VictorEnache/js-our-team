@@ -54,7 +54,10 @@ button_add.addEventListener('click', () =>{
         div.append(div_2)
         div.append(img_element)
         container.append(div)
-
+        //pulisco il form
+        name_1.value = ''
+        role.value = ''
+        url.value = ''
     }
 
 })
