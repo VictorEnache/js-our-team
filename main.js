@@ -37,11 +37,11 @@ const container = document.querySelector('.container')
 const button_add = document.getElementById('button')
 const name_1 = document.getElementById('name')
 const role = document.getElementById('role')
-const img = document.getElementById('img')
+const url = document.getElementById('url')
 
 button_add.addEventListener('click', () =>{
-    if(name_1.value !== '' && role.value !== '' && img.value !== ''){
-        const new_member = {name: name_1.value, role: role.value, image: img.value }
+    if(name_1.value !== '' && role.value !== '' && url.value !== ''){
+        const new_member = {name: name_1.value, role: role.value, image: url.value }
         team.push(new_member)
         const div = document.createElement('div')
         const div_1 = document.createElement('div')
@@ -49,7 +49,7 @@ button_add.addEventListener('click', () =>{
         const img_element = document.createElement('img')
         div_1.append(name_1.value)
         div_2.append(role.value)
-        img_element.setAttribute('src', `./img/${img.value}`);
+        img_element.setAttribute('src', `./img/${url.value}`);
         div.append(div_1)
         div.append(div_2)
         div.append(img_element)
